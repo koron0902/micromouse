@@ -1,0 +1,3 @@
+[submodule "CocoaLib"]
+	path = firmware/CocoaLib
+	url = https://github.com/koron0902/CocoaLib.git

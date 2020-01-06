@@ -1,3 +1,6 @@
-*.b#*
-*.s#*
-*.l#*
+Design/**/*.b#*
+Design/**/*.s#*
+Library/**/*.l#*
+firmware/Debug
+firmware/Release
+*.swp
