@@ -1,6 +1,7 @@
-Design/**/*.b#*
-Design/**/*.s#*
-Library/**/*.l#*
+*.swp
+*.b#*
+*.s#*
+*.l#*
 firmware/Debug
 firmware/Release
-*.swp
+firmware/.settings
