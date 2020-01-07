@@ -5,7 +5,7 @@ build:
     - script:
       name: set environment
       code: |
-          export PATH = $PATH:/usr/loModifyMakeFile.pycal/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin:/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/games:/usr/local/games:/snap/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin:/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/games:/usr/local/games:/snap/bin
+          export PATH=$PATH:/usr/loModifyMakeFile.pycal/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin:/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/games:/usr/local/games:/snap/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin:/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/games:/usr/local/games:/snap/bin
           python3 firmware/makefiles/ModifyMakeFile.py
 
     - script:
