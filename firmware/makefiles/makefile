@@ -63,7 +63,7 @@ clean:
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "micromouse.axf" ; arm-none-eabi-objcopy -v -O binary "micromouse.axf" "micromouse.bin" ; arm-none-eabi-objcopy -v -O ihex "micromouse.axf" "micromouse.hex" ; checksum -p LPC1549 -d "micromouse.bin" ; cp -r ./* /mnt/Cocoa/portfolio/MicroMouse/firmware/makefiles
+	-arm-none-eabi-size "micromouse.axf" ; arm-none-eabi-objcopy -v -O binary "micromouse.axf" "micromouse.bin" ; arm-none-eabi-objcopy -v -O ihex "micromouse.axf" "micromouse.hex" ; checksum -p LPC1549 -d "micromouse.bin" ; 
 	-@echo ' '
 
 .PHONY: all clean dependents
