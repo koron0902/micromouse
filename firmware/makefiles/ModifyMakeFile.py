@@ -26,6 +26,18 @@ def modify(file):
     mk.close()
 
 if __name__ == "__main__":
+    content = ""
+    makefile = open('makefile', 'r')
+    for line in makefile:
+        if line.find('cp -r') != -1:
+            content += line[:line.find('cp -r')] + '\n'
+        else:
+            content += line
+    makefile.close()
+    makefile = open('makefile', 'w')
+    makefile.write(content)
+    makefile.close()
+
     mkfiles = glob.glob('**/*.mk', recursive = True)
     print(mkfiles)
     for mk in mkfiles:
