@@ -5,3 +5,8 @@
 firmware/Debug
 firmware/Release
 firmware/.settings
+*.d
+*.o
+*.axf
+*.bin
+*.hex
