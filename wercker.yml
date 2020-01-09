@@ -21,9 +21,9 @@ build:
         make -j12
 
   after-steps:
-      #    - slack-notifier:
-      #      url:  $SLACK_WEBHOOK_URL
-      #      notify_on: failed
+     - slack-notifier:
+       url:  $SLACK_WEBHOOK_URL
+       notify_on: failed
 
       #static-validations:
       #  steps:
