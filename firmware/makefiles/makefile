@@ -10,13 +10,13 @@ RM := rm -rf
 -include sources.mk
 -include src/micromouse/subdir.mk
 -include src/subdir.mk
--include CocoaLib/CocoaLib/cocoa/util/xstring/subdir.mk
--include CocoaLib/CocoaLib/cocoa/util/math/subdir.mk
--include CocoaLib/CocoaLib/cocoa/util/subdir.mk
--include CocoaLib/CocoaLib/cocoa/system/subdir.mk
--include CocoaLib/CocoaLib/cocoa/driver/comm/subdir.mk
--include CocoaLib/CocoaLib/cocoa/driver/subdir.mk
--include CocoaLib/CocoaLib/chip/src/subdir.mk
+-include CocoaLib/cocoa/util/xstring/subdir.mk
+-include CocoaLib/cocoa/util/math/subdir.mk
+-include CocoaLib/cocoa/util/subdir.mk
+-include CocoaLib/cocoa/system/subdir.mk
+-include CocoaLib/cocoa/driver/comm/subdir.mk
+-include CocoaLib/cocoa/driver/subdir.mk
+-include CocoaLib/chip/src/subdir.mk
 -include subdir.mk
 -include objects.mk
 

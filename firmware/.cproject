@@ -97,8 +97,17 @@
 							<tool id="com.crt.advproject.link.exe.debug.1918984662" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug"/>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="com.crt.advproject.config.exe.debug.1353862443.927926920" name="/" resourcePath="CocoaLib/makefiles">
+						<toolChain id="com.crt.advproject.toolchain.exe.debug.1591219375" name="NXP MCU Tools" superClass="com.crt.advproject.toolchain.exe.debug" unusedChildren="">
+							<tool id="com.crt.advproject.cpp.exe.debug.895482578" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.debug.869159231"/>
+							<tool id="com.crt.advproject.gcc.exe.debug.1497775553" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug.1880294479"/>
+							<tool id="com.crt.advproject.gas.exe.debug.99399493" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug.375452718"/>
+							<tool id="com.crt.advproject.link.cpp.exe.debug.1055733249" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.debug.2012102333"/>
+							<tool id="com.crt.advproject.link.exe.debug.1209558123" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug.1918984662"/>
+						</toolChain>
+					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CocoaLib"/>
+						<entry excluding="makefiles|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CocoaLib"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
@@ -203,8 +212,17 @@
 							<tool id="com.crt.advproject.link.exe.release.958236293" name="MCU Linker" superClass="com.crt.advproject.link.exe.release"/>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="com.crt.advproject.config.exe.release.1153190516.1907963346" name="/" resourcePath="CocoaLib/makefiles">
+						<toolChain id="com.crt.advproject.toolchain.exe.release.1961607868" name="NXP MCU Tools" superClass="com.crt.advproject.toolchain.exe.release" unusedChildren="">
+							<tool id="com.crt.advproject.cpp.exe.release.1794649254" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.release.19878417"/>
+							<tool id="com.crt.advproject.gcc.exe.release.587678882" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.release.2035933659"/>
+							<tool id="com.crt.advproject.gas.exe.release.362601054" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.release.2017646880"/>
+							<tool id="com.crt.advproject.link.cpp.exe.release.410610745" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.release.906229617"/>
+							<tool id="com.crt.advproject.link.exe.release.438862822" name="MCU Linker" superClass="com.crt.advproject.link.exe.release.958236293"/>
+						</toolChain>
+					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CocoaLib"/>
+						<entry excluding="makefiles|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CocoaLib"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
