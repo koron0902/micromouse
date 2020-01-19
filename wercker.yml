@@ -17,7 +17,7 @@ build:
     - script:
       name: build
       code: |
-        cp firmware/makefiles firmware/build
+        cp -r firmware/makefiles firmware/build
         cd firmware/build
         make -j12
 
