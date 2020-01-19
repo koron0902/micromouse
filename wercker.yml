@@ -12,12 +12,16 @@ build:
     - script:
       name: initialize git submodules
       code: |
+        cd firmware/CocoaLib
+        echo chip > ../../.git/modules/firmware/CocoaLib/info/sparse-checkout
+        echo cocoa >> ../../.git/modules/firmware/CocoaLib/info/sparse-checkout
         git submodule update --init --recursive
 
     - script:
       name: build
       code: |
-        cd firmware/makefiles
+        cp firmware/makefiles firmware/build
+        cd firmware/build
         make -j12
 
   after-steps:

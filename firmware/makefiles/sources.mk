@@ -24,12 +24,13 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-CocoaLib/chip/src \
-CocoaLib/cocoa/driver \
-CocoaLib/cocoa/driver/comm \
-CocoaLib/cocoa/util/math \
-CocoaLib/cocoa/util \
-CocoaLib/cocoa/util/xstring \
+CocoaLib/CocoaLib/chip/src \
+CocoaLib/CocoaLib/cocoa/driver \
+CocoaLib/CocoaLib/cocoa/driver/comm \
+CocoaLib/CocoaLib/cocoa/system \
+CocoaLib/CocoaLib/cocoa/util/math \
+CocoaLib/CocoaLib/cocoa/util \
+CocoaLib/CocoaLib/cocoa/util/xstring \
 src \
 src/micromouse \
 

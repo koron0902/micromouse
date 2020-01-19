@@ -10,12 +10,13 @@ RM := rm -rf
 -include sources.mk
 -include src/micromouse/subdir.mk
 -include src/subdir.mk
--include CocoaLib/cocoa/util/xstring/subdir.mk
--include CocoaLib/cocoa/util/math/subdir.mk
--include CocoaLib/cocoa/util/subdir.mk
--include CocoaLib/cocoa/driver/comm/subdir.mk
--include CocoaLib/cocoa/driver/subdir.mk
--include CocoaLib/chip/src/subdir.mk
+-include CocoaLib/CocoaLib/cocoa/util/xstring/subdir.mk
+-include CocoaLib/CocoaLib/cocoa/util/math/subdir.mk
+-include CocoaLib/CocoaLib/cocoa/util/subdir.mk
+-include CocoaLib/CocoaLib/cocoa/system/subdir.mk
+-include CocoaLib/CocoaLib/cocoa/driver/comm/subdir.mk
+-include CocoaLib/CocoaLib/cocoa/driver/subdir.mk
+-include CocoaLib/CocoaLib/chip/src/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -63,7 +64,7 @@ clean:
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "micromouse.axf" ; arm-none-eabi-objcopy -v -O binary "micromouse.axf" "micromouse.bin" ; arm-none-eabi-objcopy -v -O ihex "micromouse.axf" "micromouse.hex" ; checksum -p LPC1549 -d "micromouse.bin" ; 
+	-arm-none-eabi-size "micromouse.axf" ; arm-none-eabi-objcopy -v -O binary "micromouse.axf" "micromouse.bin" ; arm-none-eabi-objcopy -v -O ihex "micromouse.axf" "micromouse.hex" ; checksum -p LPC1549 -d "micromouse.bin" ; cp -r ./* /mnt/Cocoa/portfolio/MicroMouse/firmware/makefiles
 	-@echo ' '
 
 .PHONY: all clean dependents
